@@ -1,0 +1,70 @@
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lecture-1
+$ ls
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lecture-1
+$ touch app.js
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lecture-1
+$ ls
+app.js
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lecture-1
+$ mkdir folder-1
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lecture-1
+$ ls
+app.js  folder-1/
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lecture-1
+$ cd ..
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U
+$ cd Lecture-1/
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lecture-1
+$ cd folder-1/
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lecture-1/folder-1
+$ cd ..
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lecture-1
+$ cat app.js
+console.log("linux command");
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lecture-1
+$ touch abc.txt
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lecture-1
+$ ls
+abc.txt  app.js  folder-1/
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lecture-1
+$ rm abc.txt
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lecture-1
+$ ls
+app.js  folder-1/
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lecture-1
+$ rm app.js
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lecture-1
+$ ls
+folder-1/
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lecture-1
+$ rm -rf
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lecture-1
+$
+
+
+
+ls -> to list all file and folder
+touch -> to create a file 
+mkdir -> to create a folder
+cd -> change directory
+cat -> to display the content of a file
+rm -> to remove a file
+rm -rf -> rf(remove force-fully) the content of file
+     
