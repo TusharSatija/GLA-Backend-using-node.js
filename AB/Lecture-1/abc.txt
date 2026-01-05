@@ -1,0 +1,87 @@
+this is a text file....
+https://github.com/TusharSatija/GLA-Backend-using-node.js
+
+
+
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-1 (ma
+$ code .
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-1 (ma
+$ ls
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-1 (ma
+$ touch abc.txt
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-1 (ma
+$ ls
+abc.txt
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-1 (ma
+$ mkdir new-folder
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-1 (ma
+$ ls
+abc.txt  new-folder/
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-1 (ma
+$ read abc.txt
+bash: read: `abc.txt': not a valid identifier
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-1 (master)
+$ cat abc.txt
+this is a text file....
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-1 (master)
+$ touch app.js
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-1 (master)
+$ ls
+abc.txt  app.js  new-folder/
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-1 (master)
+$ del a
+abc.txt  app.js
+ 
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-1 (master)
+$ rm a
+abc.txt  app.js
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-1 (master)
+$ rm app.js
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-1 (master)
+$ ld
+C:\MinGW\bin\ld.exe: no input files
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-1 (master)
+$ ls
+abc.txt  new-folder/
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-1 (master)
+$ git init
+Initialized empty Git repository in C:/Users/Lenovo/Desktop/GLA-Backend/AB/Lecture-1/.git/
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-1 (main)
+$ ls
+abc.txt  new-folder/
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-1 (main)
+$ ls -a
+./  ../  .git/  abc.txt  new-folder/
+ 
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-1 (ma
+$ ls
+abc.txt  new-folder/
+ 
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-1 (ma
+$ ls -a
+./  ../  .git/  abc.txt  new-folder/
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-1 (ma
+$ rm -rf  .git
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-1 (mar)
+$
+
+
+
