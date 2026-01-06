@@ -1,0 +1,106 @@
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-2 (master)
+$ ls
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-2 (master)
+$ git init
+Initialized empty Git repository in C:/Users/Lenovo/Desktop/GLA-Backend/AB/Lecture-2/.git/
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-2 (main)
+$ ls -a
+./  ../  .git/
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-2 (main)
+$ git  status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-2 (main)
+$ touch app.js
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-2 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        app.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-2 (main)
+$ code .
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-2 (main)
+$ git add .
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-2 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   app.js
+
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-2 (main)
+$ git commit -m"first commit"
+[main (root-commit) a61b73c] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 app.js
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-2 (main)
+$ git checkout -b new-feature
+Switched to a new branch 'new-feature'
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-2 (new-feature)
+$ git add .
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-2 (new-feature)
+$ git commit -"update changes"
+fatal: Invalid untracked files mode 'pdate changes'
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-2 (new-feature)
+$ git commit -m"update changes"
+[new-feature 31ba475] update changes
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-2 (new-feature)
+$ git branch
+  main
+* new-feature
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-2 (new-feature)
+$ git checkout main
+Switched to branch 'main'
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-2 (main)
+$ git merge  new-feature
+Updating a61b73c..31ba475
+Fast-forward
+ app.js | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-2 (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-2 (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   app.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-2 (main)
+$
