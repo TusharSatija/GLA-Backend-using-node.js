@@ -1,0 +1,73 @@
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lecture-1 (master)
+$ ls
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lecture-1 (master)
+$ touch text.txt
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lecture-1 (master)
+$ ls
+text.txt
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lecture-1 (master)
+$ code .
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lecture-1 (master)
+$ cat text.txt
+this is a text file ...
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lecture-1 (master)
+$ mkdir new-folder
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lecture-1 (master)
+$ ls
+new-folder/  text.txt
+ 
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lecture-1 (master)
+$ ls
+new-folder/  text.txt
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lecture-1 (master)
+$ cd new-folder/
+ 
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lecture-1/new-folder (master)
+$ cd ..
+ 
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lecture-1 (master)
+$ ls -a
+./  ../  new-folder/  text.txt
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lecture-1 (master)
+$ git init
+Initialized empty Git repository in C:/Users/Lenovo/Desktop/GLA-Backend/Q/Lecture-1/.git/
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lecture-1 (main)
+$ ls
+new-folder/  text.txt
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lecture-1 (main)
+$ ls -a
+./  ../  .git/  new-folder/  text.txt
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lecture-1 (main)
+$ rmdir text.txt
+rmdir: failed to remove 'text.txt': Not a directory
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lecture-1 (main)
+$ rm text.txt
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lecture-1 (main)
+$ rm .git
+rm: cannot remove '.git': Is a directory
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lecture-1 (main)
+$ rmdir .git
+rmdir: failed to remove '.git': Directory not empty
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lecture-1 (main)
+$ rm -rf .git/
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lecture-1 (master)
+$ ls
+new-folder/
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lecture-1 (master)
+$
