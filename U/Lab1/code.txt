@@ -1,0 +1,329 @@
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lab-1 (master)
+$ git init
+Initialized empty Git repository in C:/Users/Lenovo/Desktop/GLA-Backend/U/Lab-1/.git/
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lab-1 (main)
+$ touch index.html
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lab-1 (main)
+$ code .
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lab-1 (main)
+$ git add .
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lab-1 (main)
+$ git commit -m"f-commit"
+[main (root-commit) ae2de13] f-commit
+ 1 file changed, 11 insertions(+)
+ create mode 100644 index.html
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lab-1 (main)
+$ git add .
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lab-1 (main)
+$ git commit -m"s-commit"
+[main 67fd982] s-commit
+ 1 file changed, 3 insertions(+)
+ create mode 100644 style.css
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lab-1 (main)
+$ git checkout -b new-feacture
+Switched to a new branch 'new-feacture'
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lab-1 (new-feacture)
+$ git branch
+  main
+* new-feacture
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lab-1 (new-feacture)
+$ git status
+On branch new-feacture
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lab-1 (new-feacture)
+$ git add .
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lab-1 (new-feacture)
+$ git commit -m"t-commit"
+[new-feacture ae951bb] t-commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lab-1 (new-feacture)
+$ git status
+On branch new-feacture
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        abc.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lab-1 (new-feacture)
+$ git add .
+g
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lab-1 (new-feacture)
+$ git commit -m"f-commit"
+[new-feacture 34839e7] f-commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 abc.txt
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lab-1 (new-feacture)
+commit 34839e779404f6ea95c6d044a34f718b8ea2ff4a (HEAD -> new-feacture)
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:47:51 2026 +0530
+
+    f-commit
+
+commit ae951bbbc66f05d4b5b9907799909c771629930a
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:32:25 2026 +0530
+
+    t-commit
+
+commit 67fd98238d28a9d9bb04d162deeecd41f62395e0 (main)
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:18:21 2026 +0530
+
+    s-commit
+
+commit ae2de138a46e24dc6554a2e42abffd32ede22729
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:15:58 2026 +0530
+commit 34839e779404f6ea95c6d044a34f718b8ea2ff4a (HEAD -> new-feacture)
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:47:51 2026 +0530
+
+    f-commit
+
+commit ae951bbbc66f05d4b5b9907799909c771629930a
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:32:25 2026 +0530
+
+    t-commit
+
+commit 67fd98238d28a9d9bb04d162deeecd41f62395e0 (main)
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:18:21 2026 +0530
+
+    s-commit
+
+commit ae2de138a46e24dc6554a2e42abffd32ede22729
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:15:58 2026 +0530
+
+:...skipping...
+commit 34839e779404f6ea95c6d044a34f718b8ea2ff4a (HEAD -> new-feacture)
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:47:51 2026 +0530
+
+    f-commit
+
+commit ae951bbbc66f05d4b5b9907799909c771629930a
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:32:25 2026 +0530
+
+    t-commit
+
+commit 67fd98238d28a9d9bb04d162deeecd41f62395e0 (main)
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:18:21 2026 +0530
+
+    s-commit
+
+commit ae2de138a46e24dc6554a2e42abffd32ede22729
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:15:58 2026 +0530
+
+    f-commit
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lab-1 (new-feacture)
+$ git log
+commit 34839e779404f6ea95c6d044a34f718b8ea2ff4a (HEAD -> new-feacture)
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:47:51 2026 +0530
+
+    f-commit
+
+commit ae951bbbc66f05d4b5b9907799909c771629930a
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:32:25 2026 +0530
+
+    t-commit
+
+commit 67fd98238d28a9d9bb04d162deeecd41f62395e0 (main)
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:18:21 2026 +0530
+
+    s-commit
+
+commit ae2de138a46e24dc6554a2e42abffd32ede22729
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:15:58 2026 +0530
+
+    f-commit
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lab-1 (new-feacture)
+$ git checkout main
+Switched to branch 'main'
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lab-1 (main)
+$ git log
+commit 67fd98238d28a9d9bb04d162deeecd41f62395e0 (HEAD -> main)
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:18:21 2026 +0530
+
+    s-commit
+
+commit ae2de138a46e24dc6554a2e42abffd32ede22729
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:15:58 2026 +0530
+
+    f-commit
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lab-1 (main)
+$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        a.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lab-1 (main)
+$ git add .
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lab-1 (main)
+$ git commit -m"fifth commit"
+[main 5c5c9c1] fifth commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 a.txt
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lab-1 (main)
+$ git log
+commit 5c5c9c1646be59378715e2e71139baecc20a89d5 (HEAD -> main)
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:54:21 2026 +0530
+
+    fifth commit
+
+commit 67fd98238d28a9d9bb04d162deeecd41f62395e0
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:18:21 2026 +0530
+
+    s-commit
+
+commit ae2de138a46e24dc6554a2e42abffd32ede22729
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:15:58 2026 +0530
+
+    f-commit
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lab-1 (main)
+$ git log
+commit 5c5c9c1646be59378715e2e71139baecc20a89d5 (HEAD -> main)
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:54:21 2026 +0530
+
+    fifth commit
+
+commit 67fd98238d28a9d9bb04d162deeecd41f62395e0
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:18:21 2026 +0530
+
+    s-commit
+
+commit ae2de138a46e24dc6554a2e42abffd32ede22729
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:15:58 2026 +0530
+
+    f-commit
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lab-1 (main)
+$ git merge new-feacture
+Merge made by the 'ort' strategy.
+ abc.txt    | 1 +
+ index.html | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 abc.txt
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lab-1 (main)
+$ git log
+commit c23c3bab007b29dcca68f1effeb003ee3453ba6d (HEAD -> main)
+Merge: 5c5c9c1 34839e7
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:56:02 2026 +0530
+
+    Merge branch 'new-feacture'
+
+commit 5c5c9c1646be59378715e2e71139baecc20a89d5
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:54:21 2026 +0530
+
+    fifth commit
+
+commit 34839e779404f6ea95c6d044a34f718b8ea2ff4a (new-feacture)
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:47:51 2026 +0530
+
+    f-commit
+
+commit ae951bbbc66f05d4b5b9907799909c771629930a
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:32:25 2026 +0530
+
+    t-commit
+
+commit 67fd98238d28a9d9bb04d162deeecd41f62395e0
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:18:21 2026 +0530
+
+    s-commit
+
+commit ae2de138a46e24dc6554a2e42abffd32ede22729
+Author: TusharSatija <tusharsatija737@gmai.com>
+:
+commit c23c3bab007b29dcca68f1effeb003ee3453ba6d (HEAD -> main)
+Merge: 5c5c9c1 34839e7
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:56:02 2026 +0530
+
+    Merge branch 'new-feacture'
+
+commit 5c5c9c1646be59378715e2e71139baecc20a89d5
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:54:21 2026 +0530
+
+    fifth commit
+
+commit 34839e779404f6ea95c6d044a34f718b8ea2ff4a (new-feacture)
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:47:51 2026 +0530
+
+    f-commit
+
+commit ae951bbbc66f05d4b5b9907799909c771629930a
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:32:25 2026 +0530
+
+    t-commit
+
+commit 67fd98238d28a9d9bb04d162deeecd41f62395e0
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Tue Jan 6 14:18:21 2026 +0530
+
+    s-commit
+
+commit ae2de138a46e24dc6554a2e42abffd32ede22729
+Author: TusharSatija <tusharsatija737@gmai.com>
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/U/Lab-1 (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+
+
