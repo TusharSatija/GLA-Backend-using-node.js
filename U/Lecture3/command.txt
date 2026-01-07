@@ -1,0 +1,22 @@
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/New folder (3) (main)
+$ git clone https://github.com/TusharSatija/GLA-Backend-using-node.js.git
+Cloning into 'GLA-Backend-using-node.js'...
+remote: Enumerating objects: 49, done.
+remote: Counting objects: 100% (49/49), done.
+remote: Compressing objects: 100% (32/32), done.
+remote: Total 49 (delta 6), reused 45 (delta 2), pack-reused 0 (from 0)
+Receiving objects: 100% (49/49), 69.26 KiB | 1.38 MiB/s, done.
+
+Resolving deltas: 100% (6/6), done.
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/New folder (3) (main)
+$ ls
+GLA-Backend-using-node.js/
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/New folder (3) (main)
+$ cd GLA-Backend-using-node.js/
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/New folder (3)/GLA-Backend-using-node.js (master)
+$ ls
+AB/  Q/  U/  Y/
