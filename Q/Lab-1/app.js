@@ -1,0 +1,1 @@
+console.log("Learning git commit command");

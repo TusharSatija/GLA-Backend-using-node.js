@@ -1,0 +1,183 @@
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (master)
+$ ls
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (master)
+$ git init
+Initialized empty Git repository in C:/Users/Lenovo/Desktop/GLA-Backend/Q/Lab-1/.git/
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (main)
+$ ls -a
+./  ../  .git/
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (main)
+$ touch app.js
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        app.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (main)
+$ code .
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (main)
+$ git add .
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (main)
+$ git commit -m"first commit"
+[main (root-commit) e5ce41a] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 app.js
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (main)
+$ git log
+commit e5ce41a422238f441d33dea08b380f1138699e98 (HEAD -> main)
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Wed Jan 7 10:49:06 2026 +0530
+
+    first commit
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (main)
+$ touch abc.txt
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (main)
+$ code .
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (main)
+$ code .
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (main)
+$ git add .
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   abc.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   abc.txt
+
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (main)
+$ git add .
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (main)
+$ git commit -m"second commit"
+[main e5019d8] second commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 abc.txt
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (main)
+$ git log
+commit e5019d88338a7e356a32e874d6e063636cd04900 (HEAD -> main)
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Wed Jan 7 11:06:46 2026 +0530
+
+    second commit
+
+commit e5ce41a422238f441d33dea08b380f1138699e98
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Wed Jan 7 10:49:06 2026 +0530
+
+    first commit
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (main)
+$ git branch
+* main
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (main)
+$ git checkout -b new-feature
+Switched to a new branch 'new-feature'
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (new-feature)
+$ git branch
+  main
+* new-feature
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (new-feature)
+$ git status
+On branch new-feature
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   abc.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (new-feature)
+$ git add .
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (new-feature)
+$ git commit -m"third commit"
+[new-feature c9fa256] third commit
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (new-feature)
+$ log
+bash: log: command not found
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (new-feature)
+$ git log
+commit c9fa25670f4fae949714efa6df68627e9c863d9c (HEAD -> new-feature)
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Wed Jan 7 11:23:54 2026 +0530
+
+    third commit
+
+commit e5019d88338a7e356a32e874d6e063636cd04900 (main)
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Wed Jan 7 11:06:46 2026 +0530
+
+    second commit
+
+commit e5ce41a422238f441d33dea08b380f1138699e98
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Wed Jan 7 10:49:06 2026 +0530
+
+    first commit
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (new-feature)
+$ git log --oneline
+c9fa256 (HEAD -> new-feature) third commit
+e5019d8 (main) second commit
+e5ce41a first commit
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (new-feature)
+$ git checkout main
+Switched to branch 'main'
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (main)
+$ ls
+abc.txt  app.js
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (main)
+$ git branch
+* main
+  new-feature
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (main)
+$ git merge new-feature
+Updating e5019d8..c9fa256
+Fast-forward
+ abc.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Q/Lab-1 (main)
+$
