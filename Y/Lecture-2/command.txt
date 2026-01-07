@@ -1,0 +1,59 @@
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Y/Lecture-2 (master)
+$ git init
+Initialized empty Git repository in C:/Users/Lenovo/Desktop/GLA-Backend/Y/Lecture-2/.git/
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Y/Lecture-2 (main)
+$ touch index.html
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Y/Lecture-2 (main)
+$ code .
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Y/Lecture-2 (main)
+$ git add index.html
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Y/Lecture-2 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Y/Lecture-2 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Y/Lecture-2 (main)
+$ git add .
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Y/Lecture-2 (main)
+$ git commit -m"first-commit"
+[main (root-commit) 99ba22e] first-commit
+ 1 file changed, 11 insertions(+)
+ create mode 100644 index.html
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Y/Lecture-2 (main)
+$ git log
+commit 99ba22e9ffe6a3c3eae5a693838e36ba812b5f0e (HEAD -> main)
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Wed Jan 7 16:01:03 2026 +0530
+
+    first-commit
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/Y/Lecture-2 (main)
+$
