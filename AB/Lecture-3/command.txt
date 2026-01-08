@@ -1,0 +1,57 @@
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-3 (master)
+$ git init
+Initialized empty Git repository in C:/Users/Lenovo/Desktop/GLA-Backend/AB/Lecture-3/.git/
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-3 (main)
+$ git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-3 (main)
+$ touch app.js
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-3 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        app.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-3 (main)
+$ git add .
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-3 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   app.js
+
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-3 (main)
+$ git commit -m"v1"
+[main (root-commit) dcaed8e] v1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 app.js
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-3 (main)
+$ git log
+commit dcaed8ec85a04c8e040eb70d457913f4ecd01e0b (HEAD -> main)
+Author: TusharSatija <tusharsatija737@gmai.com>
+Date:   Thu Jan 8 10:46:40 2026 +0530
+
+    v1
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/GLA-Backend/AB/Lecture-3 (main)
+$ git remote add origin https://github.com/TusharSatija/3AB.git
