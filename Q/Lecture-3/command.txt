@@ -1,1 +1,51 @@
 https://github.com/TusharSatija
+
+ // git pull  
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/New folder (3) (main)
+$ git clone  https://github.com/TusharSatija/GLA-Backend-using-node.js.git
+Cloning into 'GLA-Backend-using-node.js'...
+remote: Enumerating objects: 73, done.
+remote: Counting objects: 100% (73/73), done.
+remote: Compressing objects: 100% (52/52), done.
+remote: Total 73 (delta 14), reused 63 (delta 4), pack-reused 0 (fReceiving objects:  69% (51/73)
+Receiving objects: 100% (73/73), 156.92 KiB | 4.36 MiB/s, done.
+Resolving deltas: 100% (14/14), done.
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/New folder (3) (main)
+$ ls
+GLA-Backend-using-node.js/
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/New folder (3) (main)
+$ cd GLA-Backend-using-node.js/
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/New folder (3)/GLA-Backend-using-node.js (master)
+$ code .
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/New folder (3)/GLA-Backend-using-node.js (master)
+$ git pull
+remote: Enumerating objects: 18, done.
+remote: Counting objects: 100% (18/18), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 14 (delta 1), reused 14 (delta 1), pack-reused 0 (from 0)
+Unpacking objects: 100% (14/14), 125.44 KiB | 449.00 KiB/s, done.
+From https://github.com/TusharSatija/GLA-Backend-using-node.js
+   d2162cc..f05f29b  master     -> origin/master
+Updating d2162cc..f05f29b
+Fast-forward
+ AB/Lab-1/a.js                |  10 ++++++++++
+ AB/Lab-1/app.js              |  12 ++++++++++++
+ AB/Lab-1/image.png           | Bin 0 -> 51238 bytes
+ AB/Lab-1/image1.png          | Bin 0 -> 84096 bytes
+ Q/Lecture-3/command.txt      |   1 +
+ Y/Lecture-3/push_command.txt |  17 +++++++++++++++++
+ 6 files changed, 40 insertions(+)
+ create mode 100644 AB/Lab-1/a.js
+ create mode 100644 AB/Lab-1/app.js
+ create mode 100644 AB/Lab-1/image.png
+ create mode 100644 AB/Lab-1/image1.png
+ create mode 100644 Q/Lecture-3/command.txt
+ create mode 100644 Y/Lecture-3/push_command.txt
+
+Lenovo@coding-blocks MINGW64 ~/Desktop/New folder (3)/GLA-Backend-using-node.js (master)
+$
