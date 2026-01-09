@@ -1,0 +1,12 @@
+setTimeout(()=>{
+    console.log("one");
+},2000);
+console.log("one.one");
+setTimeout(()=>{
+    console.log("two");
+},0)
+console.log("two.two");
+setTimeout(()=>{
+    console.log("three");
+},1000)
+console.log("three.three"); 

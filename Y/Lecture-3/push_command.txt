@@ -1,0 +1,17 @@
+git init ->to create a empty git repositry
+
+git add .
+
+to move untraked file to staged area 
+
+git status
+
+git commit -m"v1"
+
+git remote -v
+
+// to set origin
+git remote add origin https://github.com/TusharSatija/3Y.git
+
+
+git push -u origin brach-name
