@@ -1,0 +1,20 @@
+Headers can be grouped according to their contexts:
+
+Request headers
+Contain more information about the resource to be fetched, or about the client requesting the resource.
+
+Response headers
+Hold additional information about the response, like its location or about the server providing it.
+
+Representation headers
+Contain information about the body of the resource, like its MIME type, or encoding/compression applied.
+
+Payload headers
+Contain representation-independent information about payload data, including content length and the encoding used for transport.
+
+
+
+npm command (node package manager)
+
+npm init 
+npm init -y
