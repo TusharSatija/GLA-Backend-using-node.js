@@ -6,12 +6,17 @@ app.set('view engine','ejs');
 app.set('views',path.join(__dirname,'views'));
 app.use(bodyparser.urlencoded({extended:true}));
 app.get('/register',(req,res)=>{
-    res.render('index');
+    res.render('index1');
 })
+
+
 
 app.get('/submit',(req,res)=>{
     console.log(req.query);
-    res.send("user data recieved successfully");
+    if(req.body.upassword===req.body.uconfirmpass)
+        res.send("user data recieved successfully");
+    else
+        res.send("kindly enter same password in both field")
 })
 
 app.post('/register',(req,res)=>{
