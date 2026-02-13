@@ -1,0 +1,7 @@
+status code range
+
+100-199 -> information
+200-299 -> success
+300-399 -> redirect
+400-499 -> client side error
+500-599  -> server side error
