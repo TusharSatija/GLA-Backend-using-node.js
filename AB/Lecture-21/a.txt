@@ -1,0 +1,10 @@
+http methods
+create -> post method
+read -> get method
+update -> put / patch method
+delete -> delete method
+
+
+terminal command 
+npm init -y
+npm i ejs express body-parser 

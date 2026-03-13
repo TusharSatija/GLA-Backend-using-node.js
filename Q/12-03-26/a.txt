@@ -1,0 +1,14 @@
+To perform CRUD Operation
+CRUD -> Create READ UPDATE DELETE
+HTTP  method use in CRUD
+Create -> Post method
+READ  -> get method
+UPDATE -> put/patch method
+DELETE -> delete method 
+
+http://localhost:4000/product
+
+ejs
+
+<% %>  -> when we are using js in ejs 
+<%=  %> ->  when we are manuplate data in ejs
