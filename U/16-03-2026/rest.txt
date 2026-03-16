@@ -1,0 +1,4 @@
+REST API
+represtational state tranfer
+To perform CRUD (create read update delete)
+we use REST API.
