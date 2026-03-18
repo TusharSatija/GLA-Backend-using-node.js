@@ -12,9 +12,9 @@
                 <h1>Name :  <%= data.Pname %></h1>
                 <h4>Price : <%= data.Pprice %></h4>
                 <aside>
-                    <button><a href="">Show</a></button>
-                    <button><a href="">Edit</a></button>
-                    <button><a href="">Delete</a></button>
+                    <button><a href="/product/<%=data.Pid%>">Show</a></button>
+                    <button><a href="/product/<%= data.Pid %>/edit">Edit</a></button>
+                    <button><a href="/product/<%= data.Pid %>">Delete</a></button>
                 </aside>
 
             <% }) %>
@@ -22,3 +22,4 @@
 
 </body>
 </html>
+  
