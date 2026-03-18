@@ -12,9 +12,10 @@
             <h1> <%= data.p_name %> </li>
             <br>
             <aside>
-                <button>Show</button>
-                <button>edit</button>
-                <button>delete</button>
+                <button><a href="/product/<%= data.p_id%>">show</a></button>
+                <button><a href="/product/<%= data.p_id%>/edit">EDIT</a></button>
+                <button><a href="/product/<%= data.p_id%>/">delete</a></button>
+              
             </aside>
         <% })%>
         </article>

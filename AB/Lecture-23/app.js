@@ -41,7 +41,7 @@ app.post("/sub",(req,res)=>{
 
 
 app.get('/product/:id/edit',(req,res)=>{
-    let p=Products.filter((i)=>{
+    let p=Products.find((i)=>{
         console.log(req.params.id);
         return i==req.params.id;
     });
