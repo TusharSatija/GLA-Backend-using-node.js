@@ -1,9 +1,11 @@
 let express=require('express');
 let app=express(); 
+let bodyParser=require('body-parser');
 let path=require('path');
+const { url } = require('inspector');
 app.set("view engine","ejs");
 app.set("views",path.join(__dirname,"views"));
-
+app.use(bodyParser.urlencoded({extended:true}));
 let Products=[
     {
         Pname:"Phone",P_id:111,P_price:100000,
@@ -19,11 +21,25 @@ let Products=[
     }
 ]
 
-
 app.get("/products",(req,res)=>{
     res.render("index1",{Products});
 })
 
+app.get('/product/new',(req,res)=>{
+    res.render("new");
+})
+
+
+app.post("/products",(req,res)=>{
+    let p={
+        P_id:Math.random()*1000,
+        P_price:req.body.a_price,
+        url:req.body.a_url,
+        Pname:req.body.a_name
+    }
+    Products.push(p);
+    res.redirect('/products');
+})
 
 app.listen(4001,()=>{
     console.log("app is running at  port 4001");
