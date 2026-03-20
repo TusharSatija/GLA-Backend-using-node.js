@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit product details</title>
+</head>
+<body>
+    <form action="/blog/:id?_method='PUT'" method="post">
+        <label for="">Edit Product Name</label>
+        <input type="text" name="E_name" id="" value="<%=p.name%>">
+        <label for=""> img url </label>
+        <input type="text" name="e_img" id=""  value="<%=p.url%>">
+        <button type="submit">Edit</button>
+    </form>
+</body>
+</html>
