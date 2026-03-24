@@ -2,8 +2,7 @@ let express=require('express');
 let app=express();
 let bodyparser=require("body-parser");
 app.use(bodyparser.urlencoded({extended:true}));
-let path=require('path');
-const { url } = require('inspector');
+let path=require('path');                 
 app.set('view engine','ejs');
 app.set("views",path.join(__dirname,"views"));
 
