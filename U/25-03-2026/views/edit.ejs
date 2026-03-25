@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Product</title>
+</head>
+<body>
+    <form action="/product/<%= e[0].Pid %>?_method=PUT" method="post">
+        <label for="">Product name</label>
+        <input type="text" name="e_name" id="" value="<%= e[0].Pname%>">
+        <br>
+        <label for="">Price</label>
+        <input type="text" name="e_price" id="" value="<%= e[0].Pprice%>">
+        <br>
+        <label for="">Url</label>
+        <input type="text" name="e_url" id="" value="<%= e[0].url%>">
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>

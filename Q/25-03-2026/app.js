@@ -1,11 +1,13 @@
 let express=require('express');
 let app=express(); 
 let bodyParser=require('body-parser');
+let methodoverride=require("method-override");
 let path=require('path');
 const { url } = require('inspector');
 app.set("view engine","ejs");
 app.set("views",path.join(__dirname,"views"));
 app.use(bodyParser.urlencoded({extended:true}));
+app.use(methodoverride('_method'));
 let Products=[
     {
         Pname:"Phone",P_id:111,P_price:100000,
@@ -46,8 +48,30 @@ app.get('/product/:id',(req,res)=>{
         return data.P_id==req.params.id;
     })
     console.log(p);
-    res.render("show",{p});
-   
+    res.render("show",{p}); 
+})
+
+app.get('/product/:id/edit',(req,res)=>{
+     let e=Products.filter((data)=>{
+        return data.P_id==req.params.id;
+    })
+    console.log(e);
+    res.render("edit",{e});
+});
+
+
+app.put('/product/:id',(req,res)=>{
+    let {e_name,e_price,e_url}=req.body;
+    let updatedProduct=Products.filter((data)=>{
+        return data.P_id!=req.params.id
+    });
+    let p2={
+        Pname:e_name,P_id:Math.floor(Math.random()*100),
+        P_price:e_price,url:e_url
+    }
+    updatedProduct.push(p2);
+    Products=updatedProduct;
+    res.redirect('/products');
 })
 
 app.listen(4001,()=>{
