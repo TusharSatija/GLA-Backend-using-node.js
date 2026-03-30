@@ -1,0 +1,3 @@
+REST API(Represantionla state transfer)
+To perform CRUD (create read update delete)
+operation
