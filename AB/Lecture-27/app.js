@@ -1,6 +1,6 @@
 let express=require('express');
 let mongoose=require("mongoose");
-let {Student}=require('./db/student');
+let Student=require('./db/student');
 let app=express();
 
 // async function connectDb()
