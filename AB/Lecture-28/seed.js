@@ -1,0 +1,19 @@
+let data=[
+    {
+        Sname:"abc",
+        Roll_no:111,
+        year:"2nd",
+        section:'c',
+        Contact:93675786,
+        Email:"abc@gmail.com"
+    },
+    {
+        Sname:"Pqr",
+        Roll_no:156,
+        year:"1st",
+        section:'A',
+        Contact:88675786,
+        Email:"Pqr@gmail.com"
+    }
+];
+module.exports=data;
