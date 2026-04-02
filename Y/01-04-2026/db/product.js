@@ -2,7 +2,7 @@ let mongoose=require('mongoose');
 
 let p=mongoose.Schema({
     Price:{
-     type: Number
+     type: Number 
     },
     Name:{
         type:String,
