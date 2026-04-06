@@ -22,7 +22,7 @@ mongoose.connect("mongodb://127.0.0.1:27017/3AB")
 
 app.post('/register',(req,res)=>{
     let {Uname,Upass}=req.body;
-    bcrypt.hash(Upass,10,async (err,hash)=>{
+    bcrypt.hash(Upass,10,async (err,hash)=>{  
         let u=new user({username:Uname,passwords:hash});
         await u.save();
         console.log("user registered successfully !!");
