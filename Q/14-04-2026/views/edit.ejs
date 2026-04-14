@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit product</title>
+</head>
+<body>
+    
+    <h1> edit product details .</h1>
+    <form action="/product/<% e[0]._id%>/edit?_method=PUT" method="post">
+        <label for="">Product Name </label>
+        <input type="text" name="Ename" id=""
+         value="<%= e[0].name%>">
+         <br>
+         <label for="">Product Price </label>
+         <input type="number" name="Eprice" id=""
+          value="<%= e[0].price%>">
+          <br>
+          <label for="">product image</label>
+          <input type="text" name="Eimg" id="" 
+          value="<%= e[0].img%>">
+          <br>
+          <label for="">Rating</label>
+          <input type="text" name="Erating" id="" min="1" max="5"
+          value="<%= e[0].rating%>">
+          <br>
+          <button type="submit">submit</button>
+    </form>
+</body>
+</html>

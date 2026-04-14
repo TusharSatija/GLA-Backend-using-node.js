@@ -1,0 +1,80 @@
+let express=require('express');
+let app=express();
+let bodyparser=require('body-parser');
+app.use(bodyparser.urlencoded({extended:true}));
+let methodoverride=require('method-override');
+app.use(methodoverride("_method"));
+let mongoose=require('mongoose');  
+let path=require('path');
+let product=require('./model/product');
+let p=require('./seed');
+app.set('view engine','ejs');
+app.set('views',path.join(__dirname,'views'));
+
+mongoose.connect("mongodb://127.0.0.1:27017/3AB")
+.then(()=>{
+    console.log("connected to db");
+})
+.catch((err)=>{
+    console.log(err);
+});
+
+
+app.get('/products',async (req,res)=>{
+    let p=await product.find({});
+    console.log(p);
+    res.render('index',{p});
+});
+
+app.get('/product/new',(req,res)=>{
+    res.render('new');
+})
+
+app.post('/product/new',async (req,res)=>{
+    let { Pname,Pprice,Pimg,Prating }=req.body;
+    let p1= new product({
+        name:Pname,
+        price:Pprice,
+        rating:Prating,
+        img:Pimg
+    });
+    await p1.save();
+    console.log("added !!");
+    res.redirect('/products');
+});
+
+app.get('/product/:id',async (req,res)=>{
+    let id=req.params.id;
+    let t=await product.find({_id:id});
+    console.log(t);
+    res.render('show',{t});
+});
+
+app.get('/product/:id/edit',async (req,res)=>{
+    let id=req.params.id;
+    let e=await product.find({_id:id});
+    console.log(e)
+    res.render('edit',{e});
+});
+
+app.put('/product/:id/edit', async (req,res)=>{
+    let { Ename ,Eprice, Erating , Eimg }= req.body;
+    await product.findOneAndUpdate({_id:id},{
+        name : Ename,
+        price:Eprice,
+        rating:Erating,
+        img:Eimg
+    })
+})
+
+async function seeddb()
+{
+     await product.insertMany(p);
+     console.log("inserted to db");
+}
+// seeddb();
+
+
+app.listen(3000,()=>{
+    console.log("app is running at port 3000")
+})

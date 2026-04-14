@@ -44,6 +44,25 @@ app.get('/todo/:id',async (req,res)=>{
     let t=await todo.find({_id:id});
     console.log(t);
     res.render('show',{t});
+});
+
+
+app.get('/todo/:id/edit',async (req,res)=>{
+    let e=await todo.find({_id:req.params.id});
+    console.log(e)
+    res.render('edit',{e});
+});
+
+app.put('/todo/:id',async (req,res)=>{
+    let id=req.params.id;
+    let { Epripority, Estatus, Etask }=req.body;
+    await todo.findOneAndUpdate({_id:id},{
+        task:Etask,
+        priority:Epripority,
+        status:Estatus
+    });
+    console.log("edited !! ");
+    res.redirect('/todos'); 
 })
 
 app.delete('/todo/:id',async (req,res)=>{
