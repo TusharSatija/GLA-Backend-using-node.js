@@ -44,9 +44,7 @@ app.post('/product/new',async(req,res)=>{
 
 
 app.get('/product/:id',async (req,res)=>{
-    let id=req.parmas.id;
-    console.log(id);
-    let res1=await  product.find({_id :id});
+    let res1=await  product.find({_id :req.params.id});
     res.render("show",{res1});
 });
 

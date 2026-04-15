@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todos</title>
+</head>
+<body>
+    <h1> list all todos </h1>
+    <article>
+       <%  t.map((data)=>{ %>
+        <section style="border: 2px solid red; width: 200px ;">
+            <h1>Task :  <%= data.task %></h1>
+            <span>Status : <%=data.status%></span>
+            <span> Prioprity :<%=data.priorty%></span>
+            <br>
+            <button><a href="/todo/<%=data._id%>">show</a></button>
+            <button><a href="/todo/<%=data._id%>/edit">edit</a></button>
+            <form action="/todo/<%=data._id%>?_method=DELETE" method="post">
+                <button type="submit">DELETE</button>
+            </form>
+        </section>
+        <% }) %>
+    </article>
+</body>
+</html>
