@@ -2,6 +2,8 @@ let express=require('express');
 let app=express();
 let bodyparser=require('body-parser');;
 app.use(bodyparser.urlencoded({extended:true}));
+let methodoverride=require('method-override');
+app.use(methodoverride('_method'));
 let mongoose=require("mongoose");
 let todo=require('./model/todo');
 let t=require('./seed');
@@ -39,9 +41,27 @@ app.post('/todo/new',async (req,res)=>{
     res.redirect('/todos');
 });
 
-app.get('/todo/:id',(req,res)=>{
-    res.render('show');
+app.get('/todo/:id',async (req,res)=>{
+    let id=req.params.id;
+    let s=await todo.find({_id:id});
+    console.log(s);
+    res.render('show',{s});
+});
+
+
+app.get('/todo/:id/edit',async (req,res)=>{
+    let id =req.params.id;
+    let e=await todo.find({_id:id});
+    console.log(e);
+    res.render('edit',{e});
 })
+
+app.delete('/todo/:id',async (req,res)=>{
+    let id = req.params.id;
+    let d=await todo.deleteOne({_id:id});
+    console.log(d);
+    res.redirect('todos');
+});
 
 async function seeddb()
 {

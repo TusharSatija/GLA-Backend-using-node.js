@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+</head>
+<body>
+    <h1>list of all products</h1>
+    <article>
+        <% p.map((data)=>{ %>
+            <section>
+                <img src="<%= data.img %>" alt="" height="200px" width="200px">   
+                <h6>Name : <%= data.name %></h6>
+                <h6>Price : <%= data.price %></h6>
+                <p> <%= data.description %></p>
+                <button><a href="/product/<%=data._id%>">show</a></button>
+                <button><a href="/product/<%=data._id%>/edit">edit</a></button>
+                <form action="/product/<%= data._id%>?_method=DELETE" method="post">
+                    <button type="submit">Delete</button>
+                </form>
+            </section>
+        <% }) %>
+    </article>
+</body>
+</html>

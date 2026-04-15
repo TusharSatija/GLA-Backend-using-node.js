@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit todo</title>
+</head>
+<body>
+    <h1>edit todo list</h1>
+    <form action="/todo/<%= e[0]._id %>/edit?_method=PUT" method="post">
+        <label for="">Task</label>
+        <input type="text" name="Etsak" id="" value="<%= e[0].task>">
+        <br>
+        <label for="">status</label>
+        <br>
+        <label for="">True</label>
+        <input type="radio" name="Estatus" id="" 
+        value="True">               
+        <label for="">false</label>
+        <input type="radio" name="Estatus" id=""
+        value="false">
+    </form>
+</body>
+</html>

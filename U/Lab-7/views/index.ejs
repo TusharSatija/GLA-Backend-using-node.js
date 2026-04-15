@@ -16,7 +16,9 @@
             <br>
             <button><a href="/todo/<%=data._id%>">show</a></button>
             <button><a href="/todo/<%=data._id%>/edit">edit</a></button>
-            <button><a href="/todo/<%=data._id%>">delete</a></button>
+            <form action="/todo/<%=data._id%>?_method=DELETE" method="post">
+                <button type="submit">DELETE</button>
+            </form>
         </section>
         <% }) %>
     </article>
