@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>url shortner</title>
+</head>
+<body>
+    <form action="/short" method="post">
+        <label for="">url</label>
+        <input type="text" name="url" id="">
+        <button type="submit">Short</button>
+    </form>
+    <article>
+        <%  s.map((data)=>{ %>
+                <h1>url :  <%data.url%></h1>
+                <h1>shorturl :  <%data.shorturl%></h1>
+                <br>
+        <% }) %>
+    </article>
+</body>
+</html>

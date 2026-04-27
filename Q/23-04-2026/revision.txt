@@ -1,0 +1,11 @@
+imp topics
+
+1 -> REST API (Express, body-parser, method-override, ejs ,bcrypt,mongoose etc) or REST using filesystem
+2 -> middleware
+3 -> jwt (stateless authentication)
+4 -> passport,localpassport [username ,password](statelfull authentication)
+5 -> cookie and session                
+6 -> mongodb query like $set , $lt,$gt,$gte,$lte etc
+
+
+

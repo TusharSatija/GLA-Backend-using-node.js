@@ -1,0 +1,8 @@
+imp topic
+1->  REST Api (json ,fs,mongodb);
+2-> middleware types of middleware
+3-> promises (state)  or sync/await
+4-> jwt stateless authentication (json web token)
+5-> passport /passport-local  cookie/sesion satefull authentication
+6-> mongoose command $set $lte.$lt etc
+7-> url shortner
